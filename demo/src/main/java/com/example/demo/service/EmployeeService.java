@@ -13,6 +13,7 @@ public class EmployeeService {
     List<Employee> employeeList = new ArrayList<>();
 
     public void persistEmployees(Employee employee) {
+        employee.setId(employeeList.size()+1);
         employeeList.add(employee);
     }
 
